@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    #art-piece {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;  
+      gap: 9px;
+      background-color: black;
+      width: 748px;
+      height: 746px;
+    }
+
+    .square {
+      width: 100%;
+      height: 100%;
+      background-color: #F0F1EC;
+    }
+
+    #square-1 {
+      background-color: #E72F24;
+    }
+
+    #square-2 {
+      grid-column: span 3;
+    }
+
+    #square-3 {
+      width: 320px;
+      grid-row: span 2;
+    }
+
+    #square-4 {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    #square-5 {   
+      background-color: #004592;
+    }
+
+    #square-6 {
+      
+      grid-row: span 2;
+      padding: 0;
+      border-top: 10px solid black;
+      height: 175px;
+    }
+
+    #square-8 {
+      background-color: #F9D01E;
+      width: 198px;
+    }
+
+    #square-9 {
+      background-color: #232629;
+      width: 153px;
+    }
+
+    #square-7, #square-8, #square-9, #square-10  {
+      height: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div id="art-piece">
+    <div id="square-1" class="square"></div>
+    <div id="square-2" class="square"></div>
+    <div id="square-3" class="square"></div>
+    <div id="square-4" class="square"></div>
+    <div id="square-5" class="square"></div>
+    <div id="square-6" class="square"></div>
+    <div id="square-7" class="square"></div>
+    <div id="square-8" class="square"></div>
+    <div id="square-9" class="square"></div>
+    <div id="square-10" class="square"></div>
+   </div>
+</body>
+
+</html>
